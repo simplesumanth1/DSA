@@ -32,8 +32,8 @@ class Solution {
             pq.offer(sum);
             if(pq.size()>k)pq.poll();
         }
-        if(level<k)return -1;
-        return pq.peek();
+       
+        return level<k?-1:pq.peek();
         
         
     }
